@@ -1249,6 +1249,11 @@ html {
     padding-right: 0px;
   }
 
+  .ad\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .ad\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
