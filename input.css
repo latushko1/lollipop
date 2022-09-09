@@ -1,0 +1,150 @@
+@import url('http://fonts.cdnfonts.com/css/geometria');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'Geometria', sans-serif;
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-[1354px]
+    }
+}
+
+
+/* <----------------------- Burger menu setup -----------------------> */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.burger{
+    height: 20px;
+    position: relative;
+    width: 30px;
+}
+
+.burger-line{
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s all ease;
+}
+
+.top-line{
+    position: absolute;
+    left:0;
+    top: 0;
+}
+
+.mid-line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.bottom-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active>.top-line{
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s all ease;
+}
+
+.burger.active>.mid-line{
+    margin-top: -10px;
+    transform: translateY(8px) rotate(135deg);
+    transition: .3s all ease;
+}
+
+.burger.active>.bottom-line{
+    opacity: 0;
+    transition: .3s all ease;
+}
+
+.bg-circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #F901AB 2.31%, #6140B1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hover-nav:hover{
+    background: linear-gradient(90deg, #F901AB 2.31%, #6140B1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.btn{
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    padding: 20px 75px;
+    background: linear-gradient(90deg, #F901AB 2.31%, #6140B1 100%);
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25), 0px 0px 13px #6D3BB0;
+}
+
+
+.menu{
+    transition: all 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.active{
+    transform: translateX(0);
+}
+
+.anim-arrow{
+    animation: arrow 2s ease infinite;
+}
+
+@keyframes arrow{
+    to{
+        transform: translateY(10px);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+
+    from{
+        transform: translateY(10px);
+    }
+}
+
+/* form--desing */
+.popup{
+    position: absolute;
+    top: -250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* form--desing */
+

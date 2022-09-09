@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Lollipop</title>
+</head>
+<body class="bg-[#111111]">
+    <!-- hader section -->
+    
+    <header class="pt-[10px] min-h-[150vh] relative bg-[#111111]">
+        <img class="bg-circle" src="img/left-circle.svg" alt="">
+        <img class="absolute left-[130px]  pointer-events-none lg:w-[213px]" src="img/lollipop-1.svg" alt="">
+        <img class="absolute left-[500px] top-[100px] pointer-events-none lg:left-[386px] lg:top-[163px] lg:right-[214px] md:hidden" src="img/lollipop-2.svg" alt="">
+        <img class="absolute right-[130px] pointer-events-none lg:right-0 md:hidden" src="img/lollipop-3.svg" alt="">
+        <nav class="container justify-between items-center align-middle z-100 flex">
+            <a class="uppercase text-white font-bold text-[44px] leading-[68px]" href="index.html">
+                lolipop
+            </a>
+            <ul class="gap-[64px] flex md:hidden">
+                <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="#about">Команда</a></li>
+                <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="catalog.html">Каталог</a></li>
+                <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="reviews.html">Отзывы</a></li>
+            </ul>
+            <a class="font-bold text-xl leading-8 text-white flex gap-5 md:hidden" href="tel:88888888"> <img class="w-[34px] h-[34px] " src="img/telephone.svg" alt="telephone"> 8 (499) 460 46 80</a>
+
+            <div class="burger header__toggle hidden md:block"  id="nav__menu">
+                <span class="burger-line top-line"></span>
+                <span class="burger-line mid-line"></span>
+                <span class="burger-line bottom-line"></span>
+            </div>
+        </nav>
+       <!-- mobile-menu -->
+       <nav class="menu grid place-items-center bg-[#111111] min-h-screen w-[80%] absolute top-0">
+        <a class="uppercase text-white font-bold text-[44px] leading-[68px]" href="index.html">
+            lolipop
+        </a>
+        <ul class="flex flex-col gap-[64px]">
+            <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="#about">Команда</a></li>
+            <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="catalog.html">Каталог</a></li>
+            <li><a class="font-bold text-xl leading-8 text-white hover-nav" href="reviews.html">Отзывы</a></li>
+        </ul>
+        <a class="font-bold text-xl leading-8 text-white flex gap-5" href="tel:88888888"> <img class="w-[34px] h-[34px]" src="img/telephone.svg" alt="telephone"> 8 (499) 460 46 80</a>
+      
+    </nav>
+       <!-- mobile-menu -->
+
+        <div class="container mt-[130px] flex justify-between items-center md:flex-col md:mt-10">
+            <div class="md:order-2 md:text-center md:items-center">
+                <h1 class="font-bold text-[44px] leading-[68px] text-white max-w-[823px] lg:text-[34px]">
+                    Лучший поставщик электронных сигарет от <span class="gradient-text">135&nbsp;₽ </span>
+                </h1>
+                <p class="max-w-[823px] text-white text-xl leading-[30px] mt-[35px] pb-10 lg:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+
+                <a class="btn" href="#">
+                    Заказать&nbsp;сейчас
+                </a>
+            </div>
+
+            <img class="lg:max-w-[300px] md:max-w-[400px]" src="img/hqd-hero.png" alt="">
+        </div>
+
+        <div class="flex justify-center items-center anim-arrow md:mt-12">
+            <img src="img/down-arrow.svg" alt="">
+        </div>
+    </header>
+    <!-- hader section -->
+
+    <!-- Benefits-page -->
+    <section class="container">
+            <h1 class="font-bold text-[44px] leading-[68px] text-white lg:text-[34px]">
+                Наши <span class="gradient-text">преимущества</span> 
+            </h1>
+            <p class="max-w-[823px] text-white text-xl leading-[30px] mt-[35px] pb-10 lg:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <!-- benefits-items -->
+            <div class="grid grid-cols-2 gap-10 md:grid-cols-1">
+                <div class="flex items-center gap-[25px] px-[30px] py-[20px] bg-primary backdrop-blur border-2 border-white w-fit rounded-[30px]">
+                    <img class="h-fit p-[28px] bg-gradient-to-r from-[#F901AB] to-[#6140B1] rounded-full" src="img/box.svg" alt="box">
+                    <p class="max-w-[500px] text-white text-2xl lg:text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                </div>
+
+                <div class="flex items-center gap-[25px] px-[30px] py-[20px] bg-primary backdrop-blur border-2 border-white w-fit rounded-[30px]">
+                    <img class="h-fit p-[28px] bg-gradient-to-r from-[#F901AB] to-[#6140B1] rounded-full" src="img/box.svg" alt="box">
+                    <p class="max-w-[500px] text-white text-2xl lg:text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                </div>
+
+                <div class="flex items-center gap-[25px] px-[30px] py-[20px] bg-primary backdrop-blur border-2 border-white w-fit rounded-[30px]">
+                    <img class="h-fit p-[28px] bg-gradient-to-r from-[#F901AB] to-[#6140B1] rounded-full" src="img/box.svg" alt="box">
+                    <p class="max-w-[500px] text-white text-2xl lg:text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                </div>
+
+                <div class="flex items-center gap-[25px] px-[30px] py-[20px] bg-primary backdrop-blur border-2 border-white w-fit rounded-[30px]">
+                    <img class="h-fit p-[28px] bg-gradient-to-r from-[#F901AB] to-[#6140B1] rounded-full" src="img/box.svg" alt="box">
+                    <p class="max-w-[500px] text-white text-2xl lg:text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                </div>
+            </div>
+            <!-- benefits-items -->
+    </section>
+    <!-- Benefits-page -->
+
+    <!-- about -->
+    <section id="about" class="container grid place-items-center min-h-screen text-center">
+        <div>
+            <h1 class="font-bold text-[44px] leading-[68px] text-white lg:text-[34px]">
+                О <span class="gradient-text">нас</span> 
+            </h1>
+            <p class="my-10 text-white leading-7 text-xl ad:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+            <a class="text-black bg-white py-[21px] px-[60px] rounded-xl text-xl font-bold transition-colors duration-200 hover:bg-black hover:text-white" href="#">
+                Посмотреть&nbsp;фото
+            </a>
+        </div>
+    </section>
+    <!-- about -->
+
+    <!-- footer -->
+    <footer class="container py-4 flex justify-between items-center">
+        <a class="uppercase text-white font-bold text-[44px] leading-[68px]" href="/">
+            lolipop
+        </a>
+
+        <div class="flex gap-5">
+            <a href="#"><img src="img/inst.svg" alt=""></a>
+            <a href="#"><img src="img/vk.svg" alt=""></a>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
